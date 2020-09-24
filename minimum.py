@@ -5,7 +5,14 @@ import unittest
 
 
 def minimum(num1, num2, num3):
-    pass    
+    if num1 < num2 and num1 < num3:
+        minimum_num = num1
+    elif num2 < num1 and num2 < num3:
+        minimum_num = num2
+    else:
+        minimum_num = num3
+    return minimum_num        
+       
    
 
 
