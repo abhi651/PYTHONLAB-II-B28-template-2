@@ -5,7 +5,18 @@ import unittest
 
 
 def gcd(num1, num2):
-    pass
+    # Choose the smaller number
+    if num1 < num2:
+        smaller = num1
+    else:
+        smaller = num2
+
+
+    for i in range(1, smaller+1): 
+        if num1 % i == 0 and num2 % i == 0: 
+            gcd_compute = i
+    return gcd_compute
+
 
 # DO NOT TOUCH THE BELOW CODE
 class TestGcd(unittest.TestCase):
